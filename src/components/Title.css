@@ -1,0 +1,13 @@
+.title_container {
+  width: 100%;
+  padding: 4rem 0 2rem 0;
+  font-family: 'Alfa Slab One', cursive;
+  font-size: 8rem;
+  text-align: center;
+}
+
+.title_name {
+  background: linear-gradient(180deg, #cc17fa 0%, #000000 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}

@@ -1,38 +1,64 @@
-.App {
-  text-align: center;
+.app_content {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  font-size: 2rem;
+  margin-bottom: 8rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.accordions {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  width: 100%;
+  margin: 0 2rem;
+  min-width: 320px;
+  max-width: 1200px;
 }
 
-.App-link {
-  color: #61dafb;
+.bold {
+  font-weight: 500;
+  font-size: 4rem;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.text_content {
+  letter-spacing: 0.1em;
+  color: rgb(36, 36, 36);
+}
+
+.hidden {
+  display: none;
+  transition: all 0.3s ease;
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 90%;
   }
-  to {
-    transform: rotate(360deg);
+}
+@media only screen and (max-width: 1280px) {
+  html {
+    font-size: 80%;
+  }
+}
+@media only screen and (max-width: 960px) {
+  html {
+    font-size: 70%;
+  }
+}
+@media only screen and (max-width: 600px) {
+  html {
+    font-size: 50%;
+  }
+  .right {
+    font-size: 2rem;
+  }
+  .bold {
+    font-size: 2rem;
+  }
+
+  .left p:last-child {
+    font-size: 2rem;
+    margin-top: 2rem;
   }
 }
