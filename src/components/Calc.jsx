@@ -8,6 +8,7 @@ const Calc = () => {
   const [displayMonth, setDisplayMonth] = useState(0);
 
   const handleChange = (e) => {
+    if (e.target.value > 24 || e.target.value < 0) return;
     setHours(e.target.value);
   };
   useEffect(() => {
